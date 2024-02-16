@@ -11,8 +11,9 @@ class Study(val human: Human, val pointsToPass:Int, val course:String){
                 | 2 - Don't do anything
             """.trimMargin())
             //val action = readln().toInt()
-            val possibleOptions = 1..2
-            val action = possibleOptions.random()
+            val possibleOptions:IntRange = 1..2
+            val action:Int = possibleOptions.random()
+            println("Opción seleccionada ${action.toString()}")
             when (action) {
                 1  -> {
                     println("Studying...")
